@@ -261,20 +261,58 @@ main {
 
 .bio-section .bio-name {
     font-family: 'Outfit', 'Noto Sans KR', sans-serif;
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 2.6rem;
+    font-weight: 200;
     color: var(--text-main);
-    letter-spacing: -0.02em;
-    margin-bottom: 4px;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
     line-height: 1.1;
 }
 
 .bio-section .bio-label {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     letter-spacing: 0.15em;
     color: var(--text-dim);
     text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+/* Bio Hero: photo + name layout */
+.bio-hero {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 36px;
+    align-items: center;
     margin-bottom: 36px;
+}
+
+.bio-photo-wrap {
+    width: 200px;
+    height: 260px;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.bio-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    filter: grayscale(15%) contrast(1.05);
+    transition: filter 0.4s var(--easing-apple);
+}
+
+.bio-photo-wrap:hover .bio-photo {
+    filter: grayscale(0%) contrast(1);
+}
+
+.bio-hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 8px;
 }
 
 .bio-section .bio-statement {

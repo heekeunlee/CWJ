@@ -279,8 +279,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const b = artistBio[lang];
         const displayName = lang === 'ko' ? '정채원' : 'Chae Won, Jung';
         bioContent.innerHTML = `
-            <div class="bio-name">${displayName}</div>
-            <div class="bio-label">${b.label}</div>
+            <div class="bio-hero">
+                <div class="bio-photo-wrap">
+                    <img src="./assets/profile.jpg" alt="Chaewon Jung" class="bio-photo">
+                </div>
+                <div class="bio-hero-text">
+                    <div class="bio-name">${displayName}</div>
+                    <div class="bio-label">${b.label}</div>
+                </div>
+            </div>
             <p class="bio-statement">${b.statement}</p>
             <div class="bio-section-title">${b.educationTitle}</div>
             <ul>${b.education.map(e => `<li>${e}</li>`).join('')}</ul>
