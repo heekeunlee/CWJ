@@ -3,7 +3,7 @@ const artworks = [
         id: 1,
         title: "The Flickering Hope",
         subtitle: "빛의 의지",
-        image: "./assets/candle.jpg",
+        image: "./assets/rhino.jpg",
         description: "심연의 어둠 속에서도 꿋꿋이 타오르는 촛불은 인간 정신의 고귀한 회복력을 상징합니다. 하단의 강렬한 붉은 선들은 우리가 딛고 있는 복잡한 현실을 나타내며, 그 위에서 중심을 잡고 빛나는 불꽃은 고독 속에서의 찬란한 자아를 보여줍니다."
     },
     {
@@ -31,7 +31,7 @@ const artworks = [
         id: 5,
         title: "Strength in the Horizon",
         subtitle: "지평선의 강인함",
-        image: "./assets/rhino.jpg",
+        image: "./assets/candle.jpg",
         description: "석양을 등지고 서 있는 코뿔소의 옆모습은 변하지 않는 신념과 묵직한 존재감을 드러냅니다. 하늘의 붉은 노을은 삶의 열정을, 코뿔소의 거친 질감은 세월의 흔적을 의미하며, 이는 어떤 풍파 속에서도 굴하지 않는 내면의 단단함을 형상화한 것입니다."
     },
     {
