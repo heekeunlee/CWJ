@@ -481,11 +481,47 @@ main {
 }
 
 footer {
-    padding: 80px 0;
+    padding: 60px 20px 40px;
     text-align: center;
-    color: var(--text-dim);
-    font-size: 0.9rem;
     border-top: 1px solid var(--border-subtle);
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 36px;
+    margin-bottom: 28px;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--text-dim);
+    font-size: 0.88rem;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    transition: color 0.25s var(--easing-apple);
+    padding: 6px 0;
+}
+
+.footer-link:hover {
+    color: var(--text-main);
+}
+
+.footer-icon {
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.footer-copy {
+    color: var(--text-dim);
+    font-size: 0.78rem;
+    opacity: 0.5;
+    font-weight: 300;
+    letter-spacing: 0.04em;
 }
 
 /* Artist Name Clickable */

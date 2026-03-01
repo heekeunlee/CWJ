@@ -369,11 +369,13 @@ const artistBio = {
             "만다라 드로잉 정규 과정 이수",
             "생태 미술 및 동·식물 관찰 드로잉 연구"
         ],
-        awardsTitle: "주요 활동 및 수상",
+        awardsTitle: "주요 수상 및 활동",
         awards: [
-            "교내 미술 전시회 최우수상 수상",
-            "지역 청소년 미술 대회 입선",
-            "학교 대표 작품 교육청 전시 참여",
+            "제27회 주안시 학생미술공모전 최우수상 (조스 부문)",
+            "제12회 접경도 청소년 미술대회 최우수상 (회화 부문)",
+            "대한민국 제32회 전국 청소년 미술실기대회 특선",
+            "제9회 호남미래학생 미술대회 장려상 (세멤화 부문)",
+            "학교 대표 선발 — 서울 교육청 주관 미술 부문 교류전 참가",
             "자연과 생명 주제 개인 포트폴리오 구축"
         ],
         skillsTitle: "작업 매체 및 기법",
@@ -394,11 +396,13 @@ const artistBio = {
             "Completed formal course in Mandala Drawing",
             "Independent research in ecological art & observational drawing"
         ],
-        awardsTitle: "Activities & Recognition",
+        awardsTitle: "Awards & Recognition",
         awards: [
-            "Best Award — School Fine Arts Exhibition",
-            "Honorable Mention — Regional Youth Art Competition",
-            "Selected for Regional Education Office Group Exhibition",
+            "1st Place (Grand Prize) — 27th Jooahn Student Art Competition, Drawing Category",
+            "1st Place — 12th Jeollanam-do Youth Art Contest, Painting Category",
+            "Special Selection — 32nd National Youth Fine Arts Skills Competition",
+            "Merit Award — 9th Honam Future Student Art Competition, Detailed Drawing Category",
+            "School Representative — Seoul Metropolitan Office of Education Interschool Art Exhibition",
             "Developed solo portfolio: 'Nature & Consciousness' series"
         ],
         skillsTitle: "Media & Techniques",
