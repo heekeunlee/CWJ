@@ -584,3 +584,151 @@ footer {
         font-size: 3rem;
     }
 }
+/* Process (Prose) Section */
+.prose-section {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 60px 40px 80px;
+}
+
+.prose-section.hidden { display: none; }
+
+.prose-header { margin-bottom: 48px; }
+
+.prose-title {
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+    color: var(--text-main);
+}
+
+.prose-intro {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #d1d1d6;
+    font-weight: 300;
+    font-style: italic;
+    border-left: 2px solid var(--accent-gold);
+    padding-left: 20px;
+}
+
+.prose-block {
+    margin-bottom: 36px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.prose-block:last-of-type { border-bottom: none; }
+
+.prose-block-title {
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.prose-block-body {
+    font-size: 0.98rem;
+    line-height: 1.85;
+    color: #a1a1a6;
+    font-weight: 300;
+}
+
+.prose-quote {
+    margin-top: 48px;
+    padding: 24px 28px;
+    border-left: 3px solid var(--accent-gold);
+    background: rgba(212, 175, 55, 0.05);
+    font-size: 1rem;
+    font-style: italic;
+    color: #d1d1d6;
+    line-height: 1.7;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Inspiration Notes Section */
+.notes-section {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 60px 40px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.notes-section.hidden { display: none; }
+
+.note-card {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 32px;
+    padding: 36px 0;
+    border-bottom: 1px solid var(--border-subtle);
+    align-items: start;
+}
+
+.note-card:last-child { border-bottom: none; }
+
+.note-thumb-wrap {
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.note-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s var(--easing-apple);
+}
+
+.note-thumb-wrap:hover .note-thumb { transform: scale(1.06); }
+
+.note-body { display: flex; flex-direction: column; gap: 6px; }
+
+.note-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    letter-spacing: -0.01em;
+}
+
+.note-meta {
+    font-size: 0.75rem;
+    color: var(--accent-gold);
+    font-style: italic;
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+}
+
+.note-source {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    line-height: 1.5;
+}
+
+.note-source strong {
+    color: var(--text-main);
+    font-weight: 500;
+    margin-right: 4px;
+}
+
+.note-text {
+    font-size: 0.93rem;
+    line-height: 1.8;
+    color: #a1a1a6;
+    font-weight: 300;
+    margin-top: 4px;
+}
+
+@media (max-width: 600px) {
+    .note-card { grid-template-columns: 1fr; }
+    .note-thumb-wrap { width: 100%; aspect-ratio: 16/7; }
+    .prose-section, .notes-section, .bio-section { padding: 40px 20px 60px; }
+    .content-tab { padding: 16px 16px; font-size: 0.8rem; }
+}

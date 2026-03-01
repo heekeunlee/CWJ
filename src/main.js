@@ -12,6 +12,18 @@ const artworks = [
             subtitle: "The Will of Light",
             description: "A candle burning steadfastly in the depths of darkness symbolizes the noble resilience of the human spirit. The intense red strokes below represent the complex reality we stand upon, while the flame holding its center above reflects a brilliant self forged through solitude."
         },
+        inspiration: {
+            ko: {
+                sourceLabel: "영감의 출처:",
+                source: "정전 중 흔들리는 촛불을 보며",
+                text: "중학교 2학년 겨울, 정전이 된 집에서 홀로 촛불 하나에 의지해 앉아 있었습니다. 처음에는 무서웠지만, 눈을 감고 촛불 소리에 귀를 기울이자 오히려 마음이 고요해졌습니다. '이 불꽃은 어둠을 두려워하지 않는구나.' 그 순간을 오일파스텔로 담고 싶었습니다. 붉은 선들은 혼란스럽고 복잡한 세상을, 그 위에 홀로 선 불꽃은 흔들리면서도 꺼지지 않는 나 자신을 표현했습니다. 10대 시절 가장 솔직하게 나를 담은 작품입니다."
+            },
+            en: {
+                sourceLabel: "Inspiration:",
+                source: "A candle during a winter power outage",
+                text: "In the second year of middle school, I sat alone by a single candle during a power outage. At first I was afraid — but closing my eyes and listening to the flame, something within me grew still. 'This flame does not fear the dark.' I wanted to capture that moment in oil pastel. The red strokes below represent a chaotic and complex world; the solitary flame above is myself — trembling, yet unextinguished. Of all my early works, this one is the most honest self-portrait."
+            }
+        },
         image: "./assets/rhino.jpg"
     },
     {
@@ -26,6 +38,18 @@ const artworks = [
         en: {
             subtitle: "The Universe Within",
             description: "These intricate patterns, woven in golden lines, visualize the universe that exists within each of us. The artistic symbols placed throughout signify awakened consciousness, while the geometric structure radiating from the center represents the state of serenity and order reached through meditation."
+        },
+        inspiration: {
+            ko: {
+                sourceLabel: "영감의 출처:",
+                source: "인도 사원 건축과 명상 수련",
+                text: "인도의 만달라 예술을 책으로 처음 접했을 때, '이 세상에도 이런 수학적 아름다움이 있구나'라는 충격을 받았습니다. 이후 매일 15분 명상을 시작했고, 눈을 감으면 보이는 기하학적 패턴들을 종이 위에 옮기기 시작했습니다. 젤리펜을 선택한 이유는 금속성 광택이 의식의 빛남을 표현해준다고 느꼈기 때문입니다. 이 작품은 단 한 번도 연필 스케치 없이 중앙 점 하나에서부터 즉흥적으로 그렸습니다. 마음이 고요할수록 선이 더 정교해지는 경험을 했습니다."
+            },
+            en: {
+                sourceLabel: "Inspiration:",
+                source: "Indian temple architecture and daily meditation",
+                text: "When I first encountered mandala art in a book on Indian temples, I was struck by the realization that such mathematical beauty could exist in the world. I began daily 15-minute meditation sessions, and the geometric patterns I saw with my eyes closed gradually found their way onto paper. I chose a gel pen because its metallic sheen captured the luminous quality of heightened consciousness. Remarkably, this work was drawn without any pencil sketch — starting from a single center point, improvising outward. I found that the quieter my mind, the more precise the lines became."
+            }
         },
         image: "./assets/mandala_gold.jpg"
     },
@@ -42,6 +66,18 @@ const artworks = [
             subtitle: "Order in the Blue Current",
             description: "Drawn with meticulous blue ink, this piece explores both the flexibility of thought and structural stability. The perfect symmetry speaks to the balance we must seek even amid chaos, while the flowing curves symbolize a time of deep contemplation settling like water finding its level."
         },
+        inspiration: {
+            ko: {
+                sourceLabel: "영감의 출처:",
+                source: "비 오는 날 창문에 맺힌 물방울과 수도철학",
+                text: "비가 오는 날 창문 너머로 물방울이 서로 합쳐지며 조용히 흘러내리는 모습을 한참 바라봤습니다. 물은 형태 없이 흐르지만, 결국 질서를 만들어냅니다. 노자의 '상선약수(上善若水, 최고의 선은 물과 같다)'라는 말에서 큰 영향을 받은 시기였습니다. 파란 색연필로 좌우 대칭을 그리면서 의도적으로 완벽히 똑같지 않은 선을 남겼습니다. 자연은 완전한 대칭을 추구하지 않으니까요. 흐름과 구조 사이 그 긴장감이 이 작품의 핵심입니다."
+            },
+            en: {
+                sourceLabel: "Inspiration:",
+                source: "Raindrops on glass and Taoist philosophy",
+                text: "On a rainy afternoon, I watched raindrops on the window merge and quietly trail downward. Water has no fixed form, yet it inevitably creates its own order. I was deeply influenced at the time by Laozi's concept: 'The highest good is like water.' While drawing this bilateral symmetry in blue pencil, I deliberately left lines that were not quite identical on each side — because nature never achieves perfect symmetry. The core of this work lies in the tension between flow and structure."
+            }
+        },
         image: "./assets/mandala_blue.jpg"
     },
     {
@@ -56,6 +92,18 @@ const artworks = [
         en: {
             subtitle: "The Unconventional Eye",
             description: "The gaze of this unique blue-footed bird proposes a fresh perspective untethered from convention. Its tilted head poses curiosity and questions about the world, while the vivid contrast of color paradoxically reveals how beautiful it is to own a hue entirely your own."
+        },
+        inspiration: {
+            ko: {
+                sourceLabel: "영감의 출처:",
+                source: "갈라파고스 블루풋 부비새 다큐멘터리",
+                text: "다큐멘터리에서 처음 블루풋 부비새를 봤을 때 웃음이 나왔습니다. 파란 발로 뒤뚱뒤뚱 걸으면서도 당당했습니다. '이 새는 자신의 파란 발을 부끄러워하지 않을까?' 라는 생각에서, 나 역시 나만의 개성을 부끄러워하지 않겠다는 다짐을 했습니다. 입시 미술에서 정해진 틀을 요구받으면서도, 이 새처럼 나만의 색을 지키고 싶었습니다. 과장된 파란 발의 크기는 의도적입니다. 개성은 숨길 것이 아니라 강조해야 한다는 메시지입니다."
+            },
+            en: {
+                sourceLabel: "Inspiration:",
+                source: "A Galápagos blue-footed booby documentary",
+                text: "When I first saw the blue-footed booby in a documentary, I laughed — and then I was moved. The bird waddled forward on its absurd blue feet with complete dignity. 'Does this bird feel ashamed of its blue feet?' The question led me to a promise: I would stop being ashamed of my own peculiarities. Surrounded by the pressures of standardized exam art, I wanted to be like this bird — holding on to my own color. The exaggerated scale of the feet is intentional. Individuality is not something to hide; it is something to amplify."
+            }
         },
         image: "./assets/booby.jpg"
     },
@@ -72,6 +120,18 @@ const artworks = [
             subtitle: "Unbroken Against the Sky",
             description: "The silhouette of a rhinoceros standing against the setting sun exudes unwavering conviction and a resolute presence. The crimson horizon speaks to the passion of life, while the creature's rough texture carries the marks of time — together embodying an inner fortitude that bends to no storm."
         },
+        inspiration: {
+            ko: {
+                sourceLabel: "영감의 출처:",
+                source: "아프리카 야생 사진집과 수험 스트레스",
+                text: "수능 준비와 입시 미술을 동시에 하던 시기, 극도의 피로감을 느꼈습니다. 그때 서점에서 아프리카 야생동물 사진집을 우연히 넘기다가 코뿔소의 옆모습을 봤습니다. 거칠고 두꺼운 피부, 그러나 지평선을 향해 묵묵히 서 있는 모습. '저 동물은 아무것도 두려워하지 않는 것 같다'고 생각했습니다. 크레파스의 거친 질감은 의도적으로 선택했습니다. 매끈하지 않아도 강할 수 있다는 것을, 나 자신에게 말하고 싶었습니다. 붉은 하늘은 지는 태양이 아니라, 내일의 시작을 의미합니다."
+            },
+            en: {
+                sourceLabel: "Inspiration:",
+                source: "An African wildlife photography book and exam season burnout",
+                text: "I was in the most exhausting stretch of my life — preparing for the national exam while also training in fine art. Browsing through a wildlife photography book in a bookstore, I came across the profile of a rhinoceros. Rough, thick skin — yet standing absolutely still against the horizon, as if afraid of nothing. I chose crayon deliberately for its rough, imperfect texture. I wanted to tell myself that even an unpolished surface can carry great strength. The red sky here is not a setting sun — it is the beginning of tomorrow."
+            }
+        },
         image: "./assets/candle.jpg"
     },
     {
@@ -86,6 +146,18 @@ const artworks = [
         en: {
             subtitle: "The Knowing Quiet",
             description: "An owl with eyes gently closed symbolizes a moment of reflection — silencing the outer world to focus inward. The soft rendering of its feathers and warm tones suggest that wisdom arises not from sharpness, but from acceptance, while its very stillness speaks to a perception that sees through darkness to truth."
+        },
+        inspiration: {
+            ko: {
+                sourceLabel: "영감의 출처:",
+                source: "할머니의 기도하는 모습과 침묵의 힘",
+                text: "매일 새벽 기도하시는 할머니를 옆에서 지켜볼 때, 그 고요함에 압도되었습니다. 아무 말도 하지 않지만, 그 침묵 속에 세상 모든 것을 아는 것 같은 평온함이 있었습니다. 올빼미를 선택한 건 우연이 아닙니다. 올빼미는 밤에도 볼 수 있지만, 눈을 감고 있는 올빼미를 그리고 싶었습니다. 모든 것을 보는 능력은 밖을 바라보는 것이 아니라 안을 향하는 것에서 온다고 믿기 때문입니다. 파스텔의 부드럽고 퍼지는 질감은, 지혜가 날카롭지 않고 포근하게 퍼져나간다는 것을 표현합니다."
+            },
+            en: {
+                sourceLabel: "Inspiration:",
+                source: "My grandmother's morning prayers and the power of silence",
+                text: "Watching my grandmother pray at dawn every morning, I was overwhelmed by her quietness. She spoke no words, yet within that silence lived a serenity that seemed to know everything. My choice of the owl was not random. Owls can see in the dark — but I chose to draw one with its eyes closed. I believe true perception comes not from looking outward, but from turning inward. The soft, spreading texture of the pastel expresses that wisdom does not arrive sharp and sudden — it diffuses, gently and warmly, like dawn light."
+            }
         },
         image: "./assets/owl.jpg"
     }
@@ -151,14 +223,25 @@ function updateHero(lang = 'ko') {
 function setLanguage(lang) {
     currentLang = lang;
 
-    // Update active button
+    // Update active lang button
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+
+    // Update tab button labels
+    document.querySelectorAll('.content-tab').forEach(btn => {
+        btn.textContent = lang === 'en' ? btn.dataset.en : btn.dataset.ko;
     });
 
     // Re-render gallery and hero
     renderGallery(lang);
     updateHero(lang);
+
+    // Re-render active tab content if not gallery
+    const activeTab = document.querySelector('.content-tab.active');
+    if (activeTab && activeTab.dataset.tab !== 'gallery') {
+        renderTabContent(activeTab.dataset.tab, lang);
+    }
 
     // Save preference
     localStorage.setItem('cwj-lang', lang);
@@ -182,9 +265,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ── Tab Switching ──────────────────────────────────────────────────────
-    const bioSection = document.getElementById('bio-section');
-    const gallery = document.getElementById('gallery');
+    const allSections = {
+        bio: document.getElementById('bio-section'),
+        gallery: document.getElementById('gallery'),
+        process: document.getElementById('process-section'),
+        notes: document.getElementById('notes-section'),
+    };
     const bioContent = document.getElementById('bio-content');
+    const processContent = document.getElementById('process-content');
+    const notesContent = document.getElementById('notes-content');
 
     function renderBio(lang) {
         const b = artistBio[lang];
@@ -201,26 +290,62 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     }
 
+    function renderProcess(lang) {
+        const p = processData[lang];
+        processContent.innerHTML = `
+            <div class="prose-header">
+                <h2 class="prose-title">${p.title}</h2>
+                <p class="prose-intro">${p.intro}</p>
+            </div>
+            ${p.sections.map(sec => `
+                <div class="prose-block">
+                    <h3 class="prose-block-title">${sec.heading}</h3>
+                    <p class="prose-block-body">${sec.body}</p>
+                </div>
+            `).join('')}
+            <blockquote class="prose-quote">${p.quote}</blockquote>
+        `;
+    }
+
+    function renderNotes(lang) {
+        notesContent.innerHTML = artworks.map(art => {
+            const note = art.inspiration[lang];
+            return `
+                <div class="note-card">
+                    <div class="note-thumb-wrap">
+                        <img src="${art.image}" alt="${art.title}" class="note-thumb">
+                    </div>
+                    <div class="note-body">
+                        <h3 class="note-title">${art.title}</h3>
+                        <span class="note-meta">${art.medium[lang]}, ${art.year}</span>
+                        <p class="note-source"><strong>${note.sourceLabel}</strong> ${note.source}</p>
+                        <p class="note-text">${note.text}</p>
+                    </div>
+                </div>
+            `;
+        }).join('');
+    }
+
+    function renderTabContent(tab, lang) {
+        if (tab === 'bio') renderBio(lang);
+        if (tab === 'process') renderProcess(lang);
+        if (tab === 'notes') renderNotes(lang);
+    }
+
     function switchTab(tab) {
         document.querySelectorAll('.content-tab').forEach(btn => {
             btn.classList.toggle('active', btn.dataset.tab === tab);
         });
-
-        if (tab === 'bio') {
-            renderBio(currentLang);
-            bioSection.classList.remove('hidden');
-            gallery.classList.add('hidden');
-        } else {
-            bioSection.classList.add('hidden');
-            gallery.classList.remove('hidden');
-        }
+        Object.entries(allSections).forEach(([key, el]) => {
+            el.classList.toggle('hidden', key !== tab);
+        });
+        renderTabContent(tab, currentLang);
     }
 
     document.querySelectorAll('.content-tab').forEach(btn => {
         btn.addEventListener('click', () => switchTab(btn.dataset.tab));
     });
 
-    // Default: show gallery tab
     switchTab('gallery');
 });
 
@@ -278,3 +403,61 @@ const artistBio = {
     }
 };
 
+
+// ─── Process Data ─────────────────────────────────────────────────────────────
+const processData = {
+    ko: {
+        title: "작업과정",
+        intro: "저는 작품을 만들기 전, 반드시 오랜 시간 멈춰 서서 '왜 이것을 그려야 하는가'를 묻습니다. 재료보다 먼저 동기가 있어야 하고, 기술보다 먼저 감정이 있어야 한다고 믿습니다. 저의 작업은 언제나 관찰에서 시작해, 질문을 거쳐, 선 하나로 끝납니다.",
+        sections: [
+            {
+                heading: "01 — 관찰: 일상의 틈새에서",
+                body: "작품의 씨앗은 대부분 의도하지 않은 순간에서 옵니다. 비 오는 날 창문에 맺힌 물방울, 정전 중 흔들리는 촛불, 사진집 속 코뿔소의 옆모습. 저는 이러한 순간들을 스케치북이 아닌 마음속에 먼저 기록합니다. 사진을 찍거나 즉시 그리는 대신, 며칠간 그 장면을 머릿속에서 반복 재생하며 본질적인 이미지만 남깁니다."
+            },
+            {
+                heading: "02 — 질문: 그림의 이유를 찾다",
+                body: "'왜 이 장면이 나를 멈추게 했을까?' '이 감정의 이름은 무엇인가?' '어떤 선이 이 감각을 가장 정직하게 담을 수 있을까?' 저는 감정 일기에 가까운 개념 노트를 씁니다. 이 과정에서 많은 아이디어가 버려지지만, 살아남은 것들만이 진짜 작품이 됩니다. 저는 빠르게 그리는 것이 미덕이라고 생각하지 않습니다. 충분히 물어봤을 때 비로소 붓을 듭니다."
+            },
+            {
+                heading: "03 — 재료의 선택: 질감은 언어다",
+                body: "오일파스텔의 두껍고 거친 층, 색연필의 섬세한 선, 젤리펜의 금속성 광택, 파스텔의 부드럽게 번지는 질감 — 이 모두가 저만의 언어입니다. 재료를 선택할 때 '이 감정을 가장 물질적으로 닮은 것이 무엇인가'를 기준으로 삼습니다. 촛불의 흔들림은 오일파스텔의 층으로, 명상의 고요함은 젤리펜의 균일한 선으로 표현됩니다."
+            },
+            {
+                heading: "04 — 실행: 실수를 허용하는 용기",
+                body: "그리기 시작하면, 저는 의도적으로 '완벽한 선'을 포기합니다. 자연에는 완전한 대칭이 없고, 인간의 감정에도 반듯한 직선은 없다고 믿기 때문입니다. 수정액을 거의 쓰지 않습니다. 삐뚤어진 선도 그 순간 나의 손이 느낀 진실입니다. 만다라를 그릴 때조차 양쪽이 완전히 똑같지 않도록 남겨둡니다."
+            },
+            {
+                heading: "05 — 완성: 멈추는 시점을 아는 것",
+                body: "저는 완성된 작품을 며칠간 벽에 걸어두고, 매일 아침 다른 눈으로 바라봅니다. 아직도 손이 가고 싶다면 미완성입니다. 그림이 먼저 말을 걸어올 때, 그때가 완성입니다."
+            }
+        ],
+        quote: "\"예술은 기억하는 것이 아니라, 느꼈던 것을 다시 느끼게 하는 것이다.\" — 개인 노트, 2024"
+    },
+    en: {
+        title: "My Process",
+        intro: "Before I begin any work, I always pause and ask: 'Why do I need to draw this?' I believe motivation must come before material, and emotion before technique. My work always begins with observation, passes through questioning, and ends with a single line.",
+        sections: [
+            {
+                heading: "01 — Observation: In the Gaps of Daily Life",
+                body: "The seeds of most of my work arrive in unintended moments — raindrops on a window, a candle trembling in a power outage, the profile of a rhinoceros in a wildlife book. I record these moments in my mind first, not a sketchbook. Rather than photographing or immediately drawing, I replay the scene internally for days until only its essential image remains."
+            },
+            {
+                heading: "02 — Questioning: Finding the Reason to Paint",
+                body: "'Why did this scene make me stop?' 'What is the name of this feeling?' 'Which line can carry this sensation most honestly?' I write concept notes closer to emotional journals than art notes. Many ideas are discarded in this process. I don't believe that drawing quickly is a virtue. I only pick up the brush when I have asked enough."
+            },
+            {
+                heading: "03 — Material Selection: Texture is Language",
+                body: "The thick layers of oil pastel; the delicate precision of color pencil; the metallic luminosity of gel pen; the soft diffusion of pastel — each is its own language. When I select a material, the question is: 'What most physically resembles this emotion?' The trembling of a candle becomes layered oil pastel. The stillness of meditation becomes the even line of a gel pen."
+            },
+            {
+                heading: "04 — Execution: The Courage to Allow Mistakes",
+                body: "Once I begin drawing, I deliberately abandon the 'perfect line.' I believe nature holds no perfect symmetry, and human emotion no straight edge. I rarely use correction fluid — a crooked line is still the truth my hand felt in that moment. Even in mandalas, I leave the two sides subtly non-identical. That is what separates a living work from a mechanical copy."
+            },
+            {
+                heading: "05 — Completion: Knowing When to Stop",
+                body: "I hang a finished work on the wall for several days and look at it with fresh eyes each morning. If my hand still wants to make a mark, it is unfinished. When the painting begins to speak to me first — that is when it is complete."
+            }
+        ],
+        quote: "\"Art is not about remembering — it is about making yourself feel again what you once felt.\" — Personal notes, 2024"
+    }
+};
