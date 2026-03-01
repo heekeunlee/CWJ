@@ -175,7 +175,7 @@ const heroContent = {
         title: "Beyond the Horizon",
         titleEn: "시선 너머의 세계",
         subtitle: "Art is the glory discovered in the quiet spaces of everyday life.",
-        subtitleEn: "— Chaewon Jung"
+        subtitleEn: ""
     }
 };
 
