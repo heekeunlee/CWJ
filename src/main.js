@@ -267,13 +267,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const todayEl = document.getElementById('visit-today');
             const totalEl = document.getElementById('visit-total');
             if (!todayEl || !totalEl) return;
-            if (lang === 'en') {
-                todayEl.textContent = `Today ${data.today}`;
-                totalEl.textContent = `Total ${data.total}`;
-            } else {
-                todayEl.textContent = `오늘 ${data.today}`;
-                totalEl.textContent = `누적 ${data.total}`;
-            }
+            todayEl.textContent = `Today ${data.today}`;
+            totalEl.textContent = `Total ${data.total}`;
         }
         renderVC(savedLang);
         window.__renderVC = renderVC;
