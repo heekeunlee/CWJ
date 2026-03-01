@@ -260,9 +260,11 @@ main {
 }
 
 .bio-section .bio-name {
-    font-family: 'Sacramento', cursive;
-    font-size: 3.5rem;
-    color: #ffd700;
+    font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-main);
+    letter-spacing: -0.02em;
     margin-bottom: 4px;
     line-height: 1.1;
 }
@@ -584,6 +586,7 @@ footer {
         font-size: 3rem;
     }
 }
+
 /* Process (Prose) Section */
 .prose-section {
     max-width: 780px;
@@ -591,9 +594,13 @@ footer {
     padding: 60px 40px 80px;
 }
 
-.prose-section.hidden { display: none; }
+.prose-section.hidden {
+    display: none;
+}
 
-.prose-header { margin-bottom: 48px; }
+.prose-header {
+    margin-bottom: 48px;
+}
 
 .prose-title {
     font-size: clamp(1.8rem, 4vw, 2.4rem);
@@ -619,7 +626,9 @@ footer {
     border-bottom: 1px solid var(--border-subtle);
 }
 
-.prose-block:last-of-type { border-bottom: none; }
+.prose-block:last-of-type {
+    border-bottom: none;
+}
 
 .prose-block-title {
     font-size: 0.75rem;
@@ -659,7 +668,9 @@ footer {
     gap: 0;
 }
 
-.notes-section.hidden { display: none; }
+.notes-section.hidden {
+    display: none;
+}
 
 .note-card {
     display: grid;
@@ -670,7 +681,9 @@ footer {
     align-items: start;
 }
 
-.note-card:last-child { border-bottom: none; }
+.note-card:last-child {
+    border-bottom: none;
+}
 
 .note-thumb-wrap {
     aspect-ratio: 1;
@@ -687,9 +700,15 @@ footer {
     transition: transform 0.4s var(--easing-apple);
 }
 
-.note-thumb-wrap:hover .note-thumb { transform: scale(1.06); }
+.note-thumb-wrap:hover .note-thumb {
+    transform: scale(1.06);
+}
 
-.note-body { display: flex; flex-direction: column; gap: 6px; }
+.note-body {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
 
 .note-title {
     font-size: 1.1rem;
@@ -727,8 +746,23 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .note-card { grid-template-columns: 1fr; }
-    .note-thumb-wrap { width: 100%; aspect-ratio: 16/7; }
-    .prose-section, .notes-section, .bio-section { padding: 40px 20px 60px; }
-    .content-tab { padding: 16px 16px; font-size: 0.8rem; }
+    .note-card {
+        grid-template-columns: 1fr;
+    }
+
+    .note-thumb-wrap {
+        width: 100%;
+        aspect-ratio: 16/7;
+    }
+
+    .prose-section,
+    .notes-section,
+    .bio-section {
+        padding: 40px 20px 60px;
+    }
+
+    .content-tab {
+        padding: 16px 16px;
+        font-size: 0.8rem;
+    }
 }
