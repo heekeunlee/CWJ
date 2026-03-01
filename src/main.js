@@ -181,11 +181,10 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
     });
 
-    // Artist Bio Modal
-    const overlay = document.getElementById('bio-overlay');
+    // ── Tab Switching ──────────────────────────────────────────────────────
+    const bioSection = document.getElementById('bio-section');
+    const gallery = document.getElementById('gallery');
     const bioContent = document.getElementById('bio-content');
-    const artistBtn = document.getElementById('artist-btn');
-    const closeBtn = document.getElementById('bio-close');
 
     function renderBio(lang) {
         const b = artistBio[lang];
@@ -202,25 +201,27 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     }
 
-    function openBio() {
-        renderBio(currentLang);
-        overlay.classList.add('open');
-        document.body.style.overflow = 'hidden';
+    function switchTab(tab) {
+        document.querySelectorAll('.content-tab').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.tab === tab);
+        });
+
+        if (tab === 'bio') {
+            renderBio(currentLang);
+            bioSection.classList.remove('hidden');
+            gallery.classList.add('hidden');
+        } else {
+            bioSection.classList.add('hidden');
+            gallery.classList.remove('hidden');
+        }
     }
 
-    function closeBio() {
-        overlay.classList.remove('open');
-        document.body.style.overflow = '';
-    }
+    document.querySelectorAll('.content-tab').forEach(btn => {
+        btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+    });
 
-    artistBtn.addEventListener('click', openBio);
-    closeBtn.addEventListener('click', closeBio);
-    overlay.addEventListener('click', (e) => {
-        if (e.target === overlay) closeBio();
-    });
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') closeBio();
-    });
+    // Default: show gallery tab
+    switchTab('gallery');
 });
 
 // ─── Artist Bio Data ────────────────────────────────────────────────────────
