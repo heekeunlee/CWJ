@@ -790,7 +790,12 @@ footer {
 
     .note-thumb-wrap {
         width: 100%;
-        aspect-ratio: 16/7;
+        aspect-ratio: 1 / 1;
+        height: auto;
+    }
+
+    .note-thumb {
+        object-position: center center;
     }
 
     .prose-section,
