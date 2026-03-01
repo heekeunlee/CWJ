@@ -23,9 +23,19 @@
                     <span class="lang-divider">|</span>
                     <button class="lang-btn" data-lang="en">ENG</button>
                 </div>
-                <span class="artist-name">Artist. Chaewon Jung</span>
+                <span class="artist-name" id="artist-btn">Artist. Chaewon Jung</span>
             </nav>
         </header>
+
+        <!-- Artist Bio Modal -->
+        <div id="bio-overlay" class="bio-overlay">
+            <div class="bio-panel">
+                <button class="bio-close" id="bio-close">&times;</button>
+                <div class="bio-content" id="bio-content">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </div>
 
         <main>
             <section id="hero">

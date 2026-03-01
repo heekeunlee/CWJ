@@ -306,6 +306,137 @@ footer {
     border-top: 1px solid var(--border-subtle);
 }
 
+/* Artist Name Clickable */
+.artist-name {
+    cursor: pointer;
+    transition: color 0.3s var(--easing-apple);
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+}
+
+.artist-name:hover {
+    color: var(--text-main);
+    border-bottom-color: var(--text-dim);
+}
+
+/* Bio Modal */
+.bio-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    z-index: 2000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s var(--easing-apple);
+}
+
+.bio-overlay.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.bio-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: min(480px, 90vw);
+    background: rgba(18, 18, 20, 0.92);
+    backdrop-filter: saturate(180%) blur(30px);
+    border-left: 1px solid var(--border-subtle);
+    padding: 80px 48px 48px;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.5s var(--easing-apple);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.bio-overlay.open .bio-panel {
+    transform: translateX(0);
+}
+
+.bio-close {
+    position: absolute;
+    top: 24px;
+    right: 28px;
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-size: 1.6rem;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.bio-close:hover {
+    color: var(--text-main);
+}
+
+.bio-content .bio-name {
+    font-family: 'Sacramento', cursive;
+    font-size: 3rem;
+    color: #ffd700;
+    margin-bottom: 4px;
+    line-height: 1.1;
+}
+
+.bio-content .bio-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.bio-content .bio-statement {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #d1d1d6;
+    font-weight: 300;
+    margin-bottom: 36px;
+    border-left: 2px solid var(--accent-gold);
+    padding-left: 16px;
+    font-style: italic;
+}
+
+.bio-content .bio-section-title {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+    margin-bottom: 12px;
+    margin-top: 28px;
+}
+
+.bio-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bio-content ul li {
+    font-size: 0.9rem;
+    color: #a1a1a6;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-left: 12px;
+    position: relative;
+}
+
+.bio-content ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent-gold);
+    font-size: 0.75rem;
+}
+
 @media (max-width: 850px) {
     .gallery-grid {
         grid-template-columns: 1fr;

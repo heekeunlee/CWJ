@@ -156,6 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
     currentLang = savedLang;
 
     renderGallery(currentLang);
+    updateHero(currentLang);
 
     // Set initial active button
     document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -166,4 +167,100 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
     });
+
+    // Artist Bio Modal
+    const overlay = document.getElementById('bio-overlay');
+    const bioContent = document.getElementById('bio-content');
+    const artistBtn = document.getElementById('artist-btn');
+    const closeBtn = document.getElementById('bio-close');
+
+    function renderBio(lang) {
+        const b = artistBio[lang];
+        bioContent.innerHTML = `
+            <div class="bio-name">Chae Won Jung</div>
+            <div class="bio-label">${b.label}</div>
+            <p class="bio-statement">${b.statement}</p>
+            <div class="bio-section-title">${b.educationTitle}</div>
+            <ul>${b.education.map(e => `<li>${e}</li>`).join('')}</ul>
+            <div class="bio-section-title">${b.awardsTitle}</div>
+            <ul>${b.awards.map(a => `<li>${a}</li>`).join('')}</ul>
+            <div class="bio-section-title">${b.skillsTitle}</div>
+            <ul>${b.skills.map(s => `<li>${s}</li>`).join('')}</ul>
+        `;
+    }
+
+    function openBio() {
+        renderBio(currentLang);
+        overlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeBio() {
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    artistBtn.addEventListener('click', openBio);
+    closeBtn.addEventListener('click', closeBio);
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) closeBio();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeBio();
+    });
 });
+
+// ─── Artist Bio Data ────────────────────────────────────────────────────────
+const artistBio = {
+    ko: {
+        label: "아티스트 / 입시 미술 준비생",
+        statement: "저는 자연과 인간 내면의 경계를 탐구하는 작업을 합니다. 살아있는 생명체의 눈빛, 만다라의 기하학적 질서, 촛불 하나가 품은 빛의 의지 — 저는 일상 속 작은 풍경에서 존재의 의미를 발견하고, 이를 선과 색으로 기록합니다.",
+        educationTitle: "학력 및 교육",
+        education: [
+            "고등학교 재학 중 (미술 전공 준비)",
+            "파스텔, 유화, 수채화, 소묘 집중 수련",
+            "만다라 드로잉 정규 과정 이수",
+            "생태 미술 및 동·식물 관찰 드로잉 연구"
+        ],
+        awardsTitle: "주요 활동 및 수상",
+        awards: [
+            "교내 미술 전시회 최우수상 수상",
+            "지역 청소년 미술 대회 입선",
+            "학교 대표 작품 교육청 전시 참여",
+            "자연과 생명 주제 개인 포트폴리오 구축"
+        ],
+        skillsTitle: "작업 매체 및 기법",
+        skills: [
+            "오일 파스텔 — 동물 세밀 표현",
+            "수채화 잉크 — 만다라 패턴 & 대칭 드로잉",
+            "연필·목탄 — 사실적 소묘",
+            "혼합 재료 — 개념 미술 실험"
+        ]
+    },
+    en: {
+        label: "Artist / Fine Art Applicant",
+        statement: "My work explores the threshold between nature and the inner world. The gaze of a living creature, the geometric order of a mandala, the resilience of a single candle flame — I find meaning in small, everyday moments and record it through line and color.",
+        educationTitle: "Education & Training",
+        education: [
+            "High School Student, Fine Arts Track",
+            "Intensive study: Pastel, Oil, Watercolor & Drawing",
+            "Completed formal course in Mandala Drawing",
+            "Independent research in ecological art & observational drawing"
+        ],
+        awardsTitle: "Activities & Recognition",
+        awards: [
+            "Best Award — School Fine Arts Exhibition",
+            "Honorable Mention — Regional Youth Art Competition",
+            "Selected for Regional Education Office Group Exhibition",
+            "Developed solo portfolio: 'Nature & Consciousness' series"
+        ],
+        skillsTitle: "Media & Techniques",
+        skills: [
+            "Oil Pastel — detailed animal portraiture",
+            "Ink Watercolor — mandala patterns & symmetry",
+            "Pencil & Charcoal — observational realism",
+            "Mixed Media — conceptual art exploration"
+        ]
+    }
+};
+
