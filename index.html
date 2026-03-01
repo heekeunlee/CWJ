@@ -10,8 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Noto+Sans+KR:wght@300;400;700&family=Sacramento&display=swap"
         rel="stylesheet">
-  <script type="module" crossorigin src="/CWJ/assets/index-nCcmV_qQ.js"></script>
-  <link rel="stylesheet" crossorigin href="/CWJ/assets/index-Bj8Wu9Ei.css">
+  <script type="module" crossorigin src="/CWJ/assets/index-Ce_v9BPA.js"></script>
+  <link rel="stylesheet" crossorigin href="/CWJ/assets/index-B4HolX2h.css">
 </head>
 
 <body>
@@ -42,20 +42,32 @@
 
             <!-- Content Tab Bar -->
             <div class="content-tabs">
-                <button class="content-tab" id="tab-bio" data-tab="bio">작가소개</button>
-                <button class="content-tab active" id="tab-gallery" data-tab="gallery">작품소개</button>
+                <button class="content-tab" id="tab-bio" data-tab="bio" data-ko="작가소개"
+                    data-en="Artist Bio">작가소개</button>
+                <button class="content-tab active" id="tab-gallery" data-tab="gallery" data-ko="작품소개"
+                    data-en="Gallery">작품소개</button>
+                <button class="content-tab" id="tab-process" data-tab="process" data-ko="작업과정"
+                    data-en="Process">작업과정</button>
+                <button class="content-tab" id="tab-notes" data-tab="notes" data-ko="영감노트"
+                    data-en="Inspiration">영감노트</button>
             </div>
 
             <!-- Artist Bio Section -->
             <section id="bio-section" class="bio-section hidden">
-                <div class="bio-content" id="bio-content">
-                    <!-- Populated by JS -->
-                </div>
+                <div class="bio-content" id="bio-content"></div>
             </section>
 
             <!-- Gallery Section -->
-            <section id="gallery" class="gallery-grid">
-                <!-- Art cards will be rendered here -->
+            <section id="gallery" class="gallery-grid"></section>
+
+            <!-- Process Section -->
+            <section id="process-section" class="prose-section hidden">
+                <div id="process-content"></div>
+            </section>
+
+            <!-- Inspiration Notes Section -->
+            <section id="notes-section" class="notes-section hidden">
+                <div id="notes-content"></div>
             </section>
         </main>
 
