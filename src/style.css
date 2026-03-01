@@ -123,10 +123,10 @@ main {
 }
 
 .signature {
-    font-family: 'Pinyon Script', cursive;
-    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-family: 'Sacramento', cursive;
+    font-size: clamp(3rem, 9vw, 5.5rem);
     color: #ffd700;
-    font-weight: 300;
+    font-weight: 400;
     display: inline-block;
     white-space: nowrap;
     clip-path: inset(0 100% 0 0);
