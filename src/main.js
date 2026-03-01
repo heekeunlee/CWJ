@@ -243,6 +243,9 @@ function setLanguage(lang) {
         renderTabContent(activeTab.dataset.tab, lang);
     }
 
+    // Update visitor counter labels
+    if (window.__renderVC) window.__renderVC(lang);
+
     // Save preference
     localStorage.setItem('cwj-lang', lang);
 }
@@ -250,6 +253,31 @@ function setLanguage(lang) {
 document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('cwj-lang') || 'ko';
     currentLang = savedLang;
+
+    // ── Visitor Counter ────────────────────────────────────────────────────
+    (function initVisitorCount() {
+        const today = new Date().toISOString().slice(0, 10);
+        const data = JSON.parse(localStorage.getItem('cwj-vc') || '{}');
+        if (data.date !== today) { data.date = today; data.today = 0; }
+        data.today = (data.today || 0) + 1;
+        data.total = (data.total || 0) + 1;
+        localStorage.setItem('cwj-vc', JSON.stringify(data));
+
+        function renderVC(lang) {
+            const todayEl = document.getElementById('visit-today');
+            const totalEl = document.getElementById('visit-total');
+            if (!todayEl || !totalEl) return;
+            if (lang === 'en') {
+                todayEl.textContent = `Today ${data.today}`;
+                totalEl.textContent = `Total ${data.total}`;
+            } else {
+                todayEl.textContent = `오늘 ${data.today}`;
+                totalEl.textContent = `누적 ${data.total}`;
+            }
+        }
+        renderVC(savedLang);
+        window.__renderVC = renderVC;
+    })();
 
     renderGallery(currentLang);
     updateHero(currentLang);
