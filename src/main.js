@@ -2,6 +2,8 @@ const artworks = [
     {
         id: 1,
         title: "The Flickering Hope",
+        year: 2023,
+        medium: { ko: "종이에 오일파스텔", en: "Oil Pastel on Paper" },
         ko: {
             subtitle: "빛의 의지",
             description: "심연의 어둠 속에서도 꿋꿋이 타오르는 촛불은 인간 정신의 고귀한 회복력을 상징합니다. 하단의 강렬한 붉은 선들은 우리가 딛고 있는 복잡한 현실을 나타내며, 그 위에서 중심을 잡고 빛나는 불꽃은 고독 속에서의 찬란한 자아를 보여줍니다."
@@ -15,6 +17,8 @@ const artworks = [
     {
         id: 2,
         title: "Golden Mandala of Consciousness",
+        year: 2025,
+        medium: { ko: "종이에 젤리펜", en: "Gel Pen on Paper" },
         ko: {
             subtitle: "내면의 우주",
             description: "황금빛 선으로 짜여진 이 복잡한 문양들은 우리 내면에 존재하는 또 하나의 우주를 시각화합니다. 곳곳에 배치된 예술적 상징들은 깨어있는 의식을 뜻하며, 중앙에서 뻗어 나가는 기하학적 구조는 명상을 통해 도달하는 평온과 질서의 경지를 의미합니다."
@@ -28,6 +32,8 @@ const artworks = [
     {
         id: 3,
         title: "Tranquil Symmetry",
+        year: 2024,
+        medium: { ko: "종이에 색연필", en: "Color Pencil on Paper" },
         ko: {
             subtitle: "푸른 흐름의 질서",
             description: "푸른 잉크로 정교하게 그려진 이 작품은 생각의 유연함과 구조적 안정을 동시에 탐구합니다. 완벽한 대칭은 혼돈 속에서도 우리가 찾아내야 할 균형을 의미하며, 유려한 곡선들은 마치 물 흐르듯 가라앉는 깊은 사유의 시간을 상징합니다."
@@ -41,6 +47,8 @@ const artworks = [
     {
         id: 4,
         title: "The Eccentric Observer",
+        year: 2025,
+        medium: { ko: "종이에 오일파스텔", en: "Oil Pastel on Paper" },
         ko: {
             subtitle: "개성 넘치는 관찰자",
             description: "푸른 발을 가진 이 독특한 새의 시선은 관습을 벗어난 새로운 관점을 제안합니다. 고개를 갸웃거리는 몸짓은 세상에 대한 호기심과 질문을 던지며, 선명한 색채의 대비는 타인과 다른 나만의 색깔이 얼마나 아름다운지를 역설적으로 보여줍니다."
@@ -54,6 +62,8 @@ const artworks = [
     {
         id: 5,
         title: "Strength in the Horizon",
+        year: 2026,
+        medium: { ko: "종이에 크레파스", en: "Crayon on Paper" },
         ko: {
             subtitle: "지평선의 강인함",
             description: "석양을 등지고 서 있는 코뿔소의 옆모습은 변하지 않는 신념과 묵직한 존재감을 드러냅니다. 하늘의 붉은 노을은 삶의 열정을, 코뿔소의 거친 질감은 세월의 흔적을 의미하며, 이는 어떤 풍파 속에서도 굴하지 않는 내면의 단단함을 형상화한 것입니다."
@@ -67,6 +77,8 @@ const artworks = [
     {
         id: 6,
         title: "Silent Wisdom",
+        year: 2026,
+        medium: { ko: "종이에 파스텔", en: "Pastel on Paper" },
         ko: {
             subtitle: "침묵의 지혜",
             description: "고요히 눈을 감은 올빼미는 외부의 소란을 잠재우고 자신의 내면에 집중하는 성찰의 시간을 상징합니다. 부드러운 깃털의 표현과 따뜻한 색감은 지혜가 날카로움이 아닌 포용력에서 나온다는 것을 암시하며, 어둠 속에서도 진실을 꿰뚫어 보는 통찰력을 나타냅니다."
@@ -115,6 +127,7 @@ function renderGallery(lang = 'ko') {
             <div class="art-info">
                 <h2 class="art-title">${art.title}</h2>
                 <span class="art-subtitle">${content.subtitle}</span>
+                <span class="art-medium">${art.medium[lang]}, ${art.year}</span>
                 <p class="art-description">${content.description}</p>
             </div>
         `;

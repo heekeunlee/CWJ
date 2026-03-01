@@ -256,9 +256,19 @@ main {
 .art-subtitle {
     font-size: 0.9rem;
     color: var(--text-dim);
-    margin-bottom: var(--spacing-s);
+    margin-bottom: 6px;
     display: block;
     font-weight: 400;
+}
+
+.art-medium {
+    font-size: 0.78rem;
+    color: var(--accent-gold);
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    display: block;
+    margin-bottom: var(--spacing-s);
+    font-style: italic;
 }
 
 .art-description {
