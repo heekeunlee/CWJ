@@ -415,7 +415,7 @@ const artistBio = {
 // ─── Process Data ─────────────────────────────────────────────────────────────
 const processData = {
     ko: {
-        title: "작업과정",
+        title: "기다림이 나의 첫 번째 붓질이다",
         intro: "저는 작품을 만들기 전, 반드시 오랜 시간 멈춰 서서 '왜 이것을 그려야 하는가'를 묻습니다. 재료보다 먼저 동기가 있어야 하고, 기술보다 먼저 감정이 있어야 한다고 믿습니다. 저의 작업은 언제나 관찰에서 시작해, 질문을 거쳐, 선 하나로 끝납니다.",
         sections: [
             {
@@ -442,7 +442,7 @@ const processData = {
         quote: "\"예술은 기억하는 것이 아니라, 느꼈던 것을 다시 느끼게 하는 것이다.\" — 개인 노트, 2024"
     },
     en: {
-        title: "My Process",
+        title: "Waiting is my first brushstroke.",
         intro: "Before I begin any work, I always pause and ask: 'Why do I need to draw this?' I believe motivation must come before material, and emotion before technique. My work always begins with observation, passes through questioning, and ends with a single line.",
         sections: [
             {
