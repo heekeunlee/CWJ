@@ -97,6 +97,7 @@ main {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     margin-bottom: 24px;
+    font-style: italic;
 }
 
 #hero p {
@@ -113,6 +114,34 @@ main {
     font-weight: 300;
     font-style: italic;
     letter-spacing: 0.02em;
+    margin-bottom: var(--spacing-m);
+}
+
+.signature-container {
+    margin-top: var(--spacing-m);
+    overflow: hidden;
+}
+
+.signature {
+    font-family: 'Pinyon Script', cursive;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    color: #ffd700;
+    font-weight: 300;
+    display: inline-block;
+    white-space: nowrap;
+    clip-path: inset(0 100% 0 0);
+    animation: writingEffect 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes writingEffect {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    to {
+        clip-path: inset(0 0 0 0);
+    }
 }
 
 .gallery-grid {
