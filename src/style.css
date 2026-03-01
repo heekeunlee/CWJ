@@ -69,6 +69,46 @@ header {
     color: var(--text-dim);
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    padding: 4px 2px;
+    transition: color 0.3s var(--easing-apple);
+}
+
+.lang-btn:hover {
+    color: var(--text-main);
+}
+
+.lang-btn.active {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.lang-divider {
+    color: var(--border-subtle);
+    font-size: 0.75rem;
+    user-select: none;
+}
+
 main {
     padding-top: 52px;
 }
