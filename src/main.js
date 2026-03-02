@@ -301,13 +301,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderBio(lang) {
         const b = artistBio[lang];
         const displayName = lang === 'ko' ? '정채원' : 'Chae Won, Jung';
+        const nameClass = lang === 'en' ? 'bio-name-en' : 'bio-name';
         bioContent.innerHTML = `
             <div class="bio-hero">
                 <div class="bio-photo-wrap">
                     <img src="./assets/profile.jpg" alt="Chaewon Jung" class="bio-photo">
                 </div>
                 <div class="bio-hero-text">
-                    <div class="bio-name">${displayName}</div>
+                    <div class="${nameClass}">${displayName}</div>
                     <div class="bio-label">${b.label}</div>
                 </div>
             </div>
