@@ -300,8 +300,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderBio(lang) {
         const b = artistBio[lang];
-        const displayName = lang === 'ko' ? '정채원' : 'Chae Won, Jung';
-        const nameClass = lang === 'en' ? 'bio-name-en' : 'bio-name';
+        const displayName = lang === 'ko' ? '정채원' : 'Chae Won Jung';
+        const nameClass = lang === 'en' ? 'signature bio-name-en' : 'bio-name';
         bioContent.innerHTML = `
             <div class="bio-hero">
                 <div class="bio-photo-wrap">
@@ -368,6 +368,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.content-tab').forEach(btn => {
             btn.classList.toggle('active', btn.dataset.tab === tab);
         });
+
+        const hero = document.getElementById('hero');
+        if (hero) {
+            hero.classList.toggle('hidden', tab !== 'gallery');
+        }
+
         Object.entries(allSections).forEach(([key, el]) => {
             el.classList.toggle('hidden', key !== tab);
         });
