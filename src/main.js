@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderBio(lang) {
         const b = artistBio[lang];
         const displayName = lang === 'ko' ? '정채원' : 'Chae Won Jung';
-        const nameClass = lang === 'en' ? 'signature bio-name-en' : 'bio-name';
+        const nameClass = 'bio-name';
         bioContent.innerHTML = `
             <div class="bio-hero">
                 <div class="bio-photo-wrap">

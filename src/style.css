@@ -300,16 +300,6 @@ main {
     line-height: 1.1;
 }
 
-.bio-section .bio-content .bio-name-en {
-    font-family: 'Sacramento', cursive !important;
-    font-size: 3.8rem;
-    font-weight: 400;
-    color: var(--accent-gold);
-    margin-bottom: 8px;
-    line-height: 1;
-    letter-spacing: 0;
-}
-
 .bio-section .bio-label {
     font-size: 0.72rem;
     letter-spacing: 0.15em;
