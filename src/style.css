@@ -289,8 +289,9 @@ main {
     display: none;
 }
 
-.bio-section .bio-name {
-    font-family: 'Outfit', 'Noto Sans KR', sans-serif;
+/* Artist Bio Name Styles */
+.bio-section .bio-content .bio-name {
+    font-family: 'Outfit', 'Noto Sans KR', sans-serif !important;
     font-size: 2.6rem;
     font-weight: 200;
     color: var(--text-main);
@@ -299,13 +300,13 @@ main {
     line-height: 1.1;
 }
 
-.bio-section .bio-name-en {
-    font-family: 'Sacramento', cursive;
-    font-size: 3.5rem;
+.bio-section .bio-content .bio-name-en {
+    font-family: 'Sacramento', cursive !important;
+    font-size: 3.8rem;
     font-weight: 400;
     color: var(--accent-gold);
     margin-bottom: 8px;
-    line-height: 1.1;
+    line-height: 1;
     letter-spacing: 0;
 }
 
